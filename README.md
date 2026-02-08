@@ -21,11 +21,23 @@ python bruteforce_detector.py
 Simulate an attack (PowerShell):
 
 for ($i=0; $i -lt 10; $i++) {
+
+
   Invoke-RestMethod -Uri http://127.0.0.1:5000/login `
+
+  
   -Method POST `
+
+  
   -Body '{"username":"admin","password":"wrong"}' `
+
+  
   -ContentType "application/json"
+
+  
 }
+
+
 
 
 📂 Output artifacts (for your portfolio)
